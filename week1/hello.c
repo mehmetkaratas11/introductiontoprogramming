@@ -9,3 +9,4 @@ int main(void)
     // Print greeting
     printf("hello, %s\n", name);
 }
+ 
