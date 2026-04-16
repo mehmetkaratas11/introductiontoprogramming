@@ -1,6 +1,3 @@
-// CS50x Week 4 — BMP type definitions (distribution code)
-// DO NOT MODIFY THIS FILE
-
 #include <stdint.h>
 
 // Aliases for C types
