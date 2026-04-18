@@ -1,5 +1,5 @@
 # Project 1 — Temperature Converter
-# Author: your name here
+# Author: Mehmet Karatas
 # Date:   session date here
 #
 # Instructions:
@@ -11,11 +11,27 @@
 
 celsius = float(input("Enter temperature in Celsius: "))
 
-# TODO: calculate fahrenheit using the formula F = (C × 9/5) + 32
-# fahrenheit = ...
+# calculate fahrenheit using the formula F = (C × 9/5) + 32
+fahrenheit = (celsius * 9/5) + 32
 
-# TODO: print the result using an f-string
-# print(f"...")
+# print the result using an f-string
+print(f"{celsius}°C = {fahrenheit}°F")
 
 # ── Bonus (optional) ─────────────────────────────────────────────────────────
 # Add a direction menu (C→F or F→C)
+
+print("\nConvert: (1) Celsius → Fahrenheit  (2) Fahrenheit → Celsius")
+choice = input("Choice: ")
+
+if choice == "1":
+    celsius = float(input("Enter temperature in Celsius: "))
+    fahrenheit = (celsius * 9/5) + 32
+    print(f"{celsius}°C = {fahrenheit}°F")
+
+elif choice == "2":
+    fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+    celsius = (fahrenheit - 32) * 5/9
+    print(f"{fahrenheit}°F = {celsius}°C")
+
+else:
+    print("Invalid choice. Please enter 1 or 2.")
